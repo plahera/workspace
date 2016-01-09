@@ -1,0 +1,17 @@
+10:47:00 **** Rebuild of configuration Debug for project TankComplex ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/TankComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/OI.o ../src/OI.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/TankComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Subsystems/Drive.o ../src/Subsystems/Drive.cpp 
+../src/Subsystems/Drive.cpp: In constructor 'Drive::Drive()':
+../src/Subsystems/Drive.cpp:22:12: error: cannot convert 'std::shared_ptr<SpeedController>' to 'SpeedController*' in assignment
+  leftTalon = RobotMap::driveleftTalon;
+            ^
+../src/Subsystems/Drive.cpp:23:13: error: cannot convert 'std::shared_ptr<SpeedController>' to 'SpeedController*' in assignment
+  rightTalon = RobotMap::driverightTalon;
+             ^
+../src/Subsystems/Drive.cpp:24:12: error: cannot convert 'std::shared_ptr<RobotDrive>' to 'RobotDrive*' in assignment
+  tankDrive = RobotMap::driveTankDrive;
+            ^
+
+10:47:03 Build Finished (took 3s.116ms)
+

@@ -1,0 +1,17 @@
+13:21:03 **** Incremental Build of configuration Debug for project MechanumComplex ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/MechanumComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Robot.o ../src/Robot.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/MechanumComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Commands/AutonomousCommand.o ../src/Commands/AutonomousCommand.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/MechanumComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Commands/DriveStraight.o ../src/Commands/DriveStraight.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/MechanumComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Commands/DriveNormal.o ../src/Commands/DriveNormal.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/MechanumComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Commands/DriveSideways.o ../src/Commands/DriveSideways.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/MechanumComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/Subsystems/Drive.o ../src/Subsystems/Drive.cpp 
+arm-frc-linux-gnueabi-g++ -std=c++1y -I/Users/Paula/wpilib/cpp/current/include "-I\\$\\{workspace_loc:/MechanumComplex/src}" -O0 -g3 -Wall -c -fmessage-length=0 -o src/OI.o ../src/OI.cpp 
+arm-frc-linux-gnueabi-g++ -L/Users/Paula/wpilib/cpp/current/lib -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram src/Subsystems/Drive.o src/RobotMap.o src/Robot.o src/OI.o src/Commands/DriveStraight.o src/Commands/DriveSideways.o src/Commands/DriveNormal.o src/Commands/AutonomousCommand.o -lwpi 
+/usr/lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld: warning: libstdc++.so.6, needed by /Users/Paula/wpilib/cpp/current/lib/libFRC_NetworkCommunication.so.1.5.0, may conflict with libstdc++.so.6.0.20
+src/Robot.o: In function `Robot::RobotInit()':
+/Users/Paula/workspace/MechanumComplex/Debug/../src/Robot.cpp:24: undefined reference to `Subsystem1::Subsystem1()'
+collect2: error: ld returned 1 exit status
+
+13:21:11 Build Finished (took 8s.41ms)
+
